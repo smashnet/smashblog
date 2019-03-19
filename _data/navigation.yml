@@ -1,0 +1,6 @@
+- name: Blog
+  link: /
+- name: About
+  link: /authors/nico.html
+- name: Impressum
+  link: /impressum.html

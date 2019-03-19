@@ -1,0 +1,101 @@
+---
+layout: default
+---
+<div class="row">
+  <div class="col-sm-4"><!--left col-->
+    <div class="text-center">
+      <img src="{{ 'assets/images/' | append: page.profile_image | absolute_url }}" class="avatar img-thumbnail" alt="avatar">
+    </div>
+  </div>
+  <div class="col-sm-8"><!--right col-->
+    <div class="card text-center">
+      <h5 class="card-header">About Me</h5>
+      <div class="card-body">
+        {{ content }}
+        <hr/>
+        <a class="btn btn-light" href="{{ page.mastodon }}"><i class="fab fa-2x fa-mastodon"></i></a>
+        <a class="btn btn-light" href="{{ page.twitter }}"><i class="fab fa-2x fa-twitter"></i></a>
+        <a class="btn btn-light" href="{{ page.github }}"><i class="fab fa-2x fa-github"></i></a>
+        <a class="btn btn-light" href="{{ page.xing }}"><i class="fab fa-2x fa-xing"></i></a>
+        <a class="btn btn-light" data-toggle="collapse" href="#gpgKey" role="button" aria-expanded="false" aria-controls="gpgKey"><i class="fas fa-2x fa-lock"></i></a>
+      </div>
+      <div class="collapse text-muted" id="gpgKey">
+        GPG Public Key
+        <a class="btn btn-light" href="{{ page.gpg_key_url }}"><i class="fas fa-lg fa-file-download"></i></a><br/>
+        {{ page.gpg_key_fingerprint }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<br/>
+<!-- Ambitions -->
+<div class="row">
+  <div class="col-sm-12">
+    <div class="card">
+      <h5 class="card-header">Ambitions</h5>
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+          {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
+          {% for post in filtered_posts %}
+            <li  class="list-group-item"><a href="{{ post.url | remove_first: "/" }}">{{ post.title }}</a> - {{ post.date | date_to_string }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br/>
+<!-- Publications -->
+<div class="row">
+  <div class="col-sm-12">
+    <div class="card">
+      <h5 class="card-header">Publications</h5>
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+          {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
+          {% for post in filtered_posts %}
+            <li  class="list-group-item"><a href="{{ post.url | remove_first: "/" }}">{{ post.title }}</a> - {{ post.date | date_to_string }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br/>
+<!-- Experience -->
+<div class="row">
+  <div class="col-sm-12">
+    <div class="card">
+      <h5 class="card-header">Experience</h5>
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+          {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
+          {% for post in filtered_posts %}
+            <li  class="list-group-item"><a href="{{ post.url | remove_first: "/" }}">{{ post.title }}</a> - {{ post.date | date_to_string }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br/>
+<!-- Education -->
+<div class="row">
+  <div class="col-sm-12">
+    <div class="card">
+      <h5 class="card-header">Education</h5>
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+          {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
+          {% for post in filtered_posts %}
+            <li  class="list-group-item"><a href="{{ post.url | remove_first: "/" }}">{{ post.title }}</a> - {{ post.date | date_to_string }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

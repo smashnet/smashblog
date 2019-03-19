@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <!-- Meta -->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="author" content="{{ page.meta_author }}" />
+  <meta name="description" content="{{ page.meta_content }}" />
+  <meta name="keywords" content="{{ page.meta_keywords }}" />
+
+  <!-- Bootstrap core CSS -->
+  <link href="{{ 'assets/css/bootstrap.min.css' | absolute_url }}" rel="stylesheet" />
+
+  <!-- Fontawesome CSS -->
+  <link href="{{ 'assets/css/fontawesome.min.css' | absolute_url }}" rel="stylesheet" />
+
+
+  <!-- Custom styles for this template -->
+  <link href="{{ 'assets/css/blog-home.css' | absolute_url }}" rel="stylesheet" />
+  <link href="{{ 'assets/css/all.css' | absolute_url }}" rel="stylesheet" />
+
+  <!-- Title -->
+  <title>{{ site.title }}</title>
+</head>
+
+<body>
+  {% include navigation.html %}
+
+  <!-- Page Content -->
+  <div class="container">
+    <br/>
+    {{ content }}
+    <br/>
+  </div>
+  <!-- /.container -->
+
+  {% include footer.html %}
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{ 'assets/js/jquery.min.js' | absolute_url }}"></script>
+  <script src="{{ 'assets/js/bootstrap.bundle.min.js' | absolute_url }}"></script>
+</body>
+</html>

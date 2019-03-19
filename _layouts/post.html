@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<!-- Blog Post -->
+<div class="card mb-4">
+  <div class="card-body">
+    <h2 class="card-title">{{ page.title }}</h2>
+    <hr />
+    <p class="card-text">{{ content }}</p>
+  </div>
+  <div class="card-footer text-muted">
+    Posted on {{ page.date | date_to_string }} by
+    {% assign author = site.authors | where: 'short_name', page.author | first %}
+    {% if author %}
+    <a href="{{ author.url }}">{{ author.name }}</a>
+    {% endif %}
+  </div>
+</div>
