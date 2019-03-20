@@ -1,6 +1,7 @@
 ---
 layout: post
 author: nico
+#published: false
 ---
 Das ist er nun, mein neuer Blog über allerlei Dinge, meistens mit nicht zu verleugnendem Technikbezug ;)
 

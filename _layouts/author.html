@@ -28,4 +28,120 @@ layout: default
   </div>
 </div>
 
+{% if page.highlightboxes %}
+<br/>
+<div class="row">
+{% for box in page.highlightboxes %}
+<!-- Highlightbox -->
+  <div class="col-sm-4">
+    <div class="card">
+      <h5 class="card-header">{{ box.title }}</h5>
+      <div class="card-body">
+        {{ box.content }}
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>
+{% endif %}
+
+{% if page.community %}
+<br/>
+<h3>Community</h3>
+<table class="table table-striped">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Community</th>
+      <th scope="col"></th>
+      <th scope="col">What it's about</th>
+      <th scope="col">Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for com in page.community %}
+    <tr>
+      <td>{{ com.title }}</td>
+      <td>{{ com.position }}</td>
+      <td>{{ com.content }}</td>
+      <td><a href="{{ com.link | absolute_url }}"><i class="fas fa-link"></i></a></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+
+{% if page.experience %}
+<br/>
+<h3>Experience</h3>
+<table class="table table-striped">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Time</th>
+      <th scope="col">Title</th>
+      <th scope="col">Company</th>
+      <th scope="col">What I did</th>
+      <th scope="col">Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for exp in page.experience %}
+    <tr>
+      <td>{{ exp.time }}</td>
+      <td>{{ exp.title }}</td>
+      <td>{{ exp.company }}</td>
+      <td>{{ exp.content }}</td>
+      <td><a href="{{ exp.link | absolute_url }}"><i class="fas fa-link"></i></a></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+
+{% if page.publications %}
+<br/>
+<h3>Publications</h3>
+<table class="table table-striped">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Type</th>
+      <th scope="col">Title</th>
+      <th scope="col">Released</th>
+      <th scope="col">Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for pub in page.publications %}
+    <tr>
+      <td>{{ pub.type }}</td>
+      <td>{{ pub.title }}</td>
+      <td>{{ pub.date }}</td>
+      <td><a href="{{ pub.link | absolute_url }}"><i class="fas fa-link"></i></a></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+
+{% if page.education %}
+<br/>
+<h3>Education</h3>
+<hr/>
+<div class="row">
+{% for box in page.education %}
+<!-- Highlightbox -->
+  <div class="col-sm-4">
+    <div class="card">
+      <h5 class="card-header">{{ box.title }}</h5>
+      <div class="card-body">
+        {{ box.content }}
+      </div>
+      <div class="card-footer text-muted">
+        {{ box.time }}
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>
+{% endif %}
+
 {{ content }}
