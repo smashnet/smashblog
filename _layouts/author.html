@@ -21,7 +21,7 @@ layout: default
       </div>
       <div class="collapse text-muted" id="gpgKey">
         GPG Public Key
-        <a class="btn btn-light" href="{{ page.gpg_key_url }}"><i class="fas fa-lg fa-file-download"></i></a><br/>
+        <a class="btn btn-light" href="{{ page.gpg_key_url | absolute_url }}"><i class="fas fa-lg fa-file-download"></i></a><br/>
         {{ page.gpg_key_fingerprint }}
       </div>
     </div>
