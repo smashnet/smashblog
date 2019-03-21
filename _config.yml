@@ -25,3 +25,5 @@ exclude:
   - build.sh
   - serve.sh
   - deploy_smashblog
+  - LICENSE
+  - README.md
