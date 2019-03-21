@@ -24,3 +24,4 @@ kramdown:
 exclude:
   - build.sh
   - serve.sh
+  - deploy_smashblog
