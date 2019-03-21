@@ -3,7 +3,7 @@ short_name: nico
 name: Nico
 profile_image: nico.jpg
 
-about: My name is Nico, I live in germany and love tech stuff, music and photography. Luckily, I can combine my affinity for hardware and software in my job as IT consultant. On the arty side of live I played electric guitar in a band many years ago. Hopefully, there will be another chance to do so in future :)
+about: My name is Nico, I live in germany and love tech stuff, music and photography. Luckily, I can leverage my affinity for hardware and software in my job as IT consultant. On the arty side of live I played electric guitar in a band many years ago. Hopefully, there will be another chance to do so in future :)
 
 mastodon: https://social.tchncs.de/@Smashnet
 twitter: https://twitter.com/smashnet
