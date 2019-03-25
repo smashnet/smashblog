@@ -2,8 +2,19 @@
 layout: post
 author: nico
 title: Blogging mit IPFS
+subtitle:
+category: article # Can be "blog post" or "article"
 published: false
 ---
+* Pitch:
+* Was ist IPFS?
+* Warum IPFS?
+  * Dezentralisierung
+  * Nicht zensierbar
+  * Effizient in der Datenverteilung
+  * Deduplikation
+*
+
 Wer seinen Blog über <a href="https://ipfs.io">IPFS</a> zur Verfügung stellen möchte, wird schnell merken, dass systembedingt die meisten der üblichen Blog-Softwares dafür nicht in Frage kommen. Warum das der Fall ist, und wie man trotzdem seinen Blog mit IPFS ins _Distributed Web_ (DWeb) bekommt, möchte ich in diesem Blogpost erläutern.
 
 # Grundlegendes
