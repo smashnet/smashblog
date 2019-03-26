@@ -3,7 +3,7 @@ layout: post
 author: nico
 title: Blogging mit IPFS
 subtitle:
-category: article # Can be "blog post" or "article"
+category: articles
 published: false
 ---
 * Pitch:

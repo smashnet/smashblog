@@ -2,7 +2,7 @@
 layout: post
 author: nico
 title: Jekyll oder Hugo?
-category: blog post # Can be "blog post" or "article"
+category: blog
 published: true
 ---
 

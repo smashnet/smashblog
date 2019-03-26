@@ -2,7 +2,7 @@
 layout: post
 author: nico
 title: Syntax Highlighting und Kleinigkeiten
-category: blog post # Can be "blog post" or "article"
+category: blog
 published: true
 ---
 

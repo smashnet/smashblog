@@ -1,7 +1,7 @@
 ---
 layout: post
 author: nico
-category: blog post # Can be "blog post" or "article"
+category: blog
 published: true
 ---
 Das ist er nun, mein neuer Blog über allerlei Dinge, meistens mit nicht zu verleugnendem Technikbezug ;)
