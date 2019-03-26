@@ -20,6 +20,9 @@ defaults:
 
 kramdown:
   auto_ids: false
+highlighter: rouge
+sass:
+    style: compressed
 
 exclude:
   - build.sh

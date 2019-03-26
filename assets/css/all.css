@@ -1,3 +1,5 @@
+@import url(friendly.css);
+
 html {
   position: relative;
   min-height: 100%;
@@ -12,13 +14,6 @@ body {
 }
 
 .markdown-body {
- font-family:-apple-system,
- BlinkMacSystemFont,
- Segoe UI,
- Roboto,
- Helvetica,
- Arial,
- sans-serif;
  font-size:16px;
  line-height:1.5;
  word-wrap:break-word
@@ -470,10 +465,8 @@ body {
  cursor:default!important
 }
 .markdown-body {
- font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
  padding-top:20px;
  padding-bottom:20px;
- max-width:758px;
  overflow:visible!important
 }
 .markdown-body pre {

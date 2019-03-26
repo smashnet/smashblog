@@ -35,7 +35,7 @@ In CherryPy gibt es dafür diverse _Dispatcher_, die diese Verbindung auf versch
 
 Wird bei der Konfiguration von CherryPy nicht explizit ein bestimmter Dispatcher gewählt, so kommt der `DefaultDispatcher` zum Einsatz. Dieser Dispatcher interpretiert die URL als Baumstruktur. Meine Anwendung könnte also z.B. wie folgt aufgebaut sein:
 
-![](/assets/images/cherrypy-url-routing/fig1.svg)
+![]({{ '/assets/images/cherrypy-url-routing/fig1.svg' | absolute_url }})
 
 Um das gezeigte Beispiel nun mit CherryPy umzusetzen, brauchen wir zwei Dinge:
 
@@ -110,7 +110,7 @@ def index(self):
 
 Der nächste Schritt ist interessanter. Meist bestehen Bereiche aus mehreren Sektionen, die sich um verschiedene Dinge kümmern, sprich die Teilbäume sind in der Regel tiefer. In meinem Beispiel müssen Alben und die darin enthaltenen Bilder und Subscriptions administriert werden. Wir haben also folgenden Aufbau:
 
-![](/assets/images/cherrypy-url-routing/fig2.svg)
+![]({{ '/assets/images/cherrypy-url-routing/fig2.svg' | absolute_url }})
 
 Wie wir jetzt z.B. an `/admin/album/{uuid}` kommen, ist wesentlich spannender, denn hier bietet CherryPy uns zwei Möglichkeiten. Auf diese zwei Arten des Routings möchte ich nur kurz eingehen, da sie zwar ihre Daseinsberechtigung haben, aber aus meiner Sicht den Code nur unverständlicher und schwerer wartbar gemacht haben.
 
@@ -245,11 +245,11 @@ Im Gegensatz zum `DefaultDispatcher` stellen also **nicht** die _Methoden_ in `w
 
 Im gezeigten Beispiel wird ein Mounting Tree
 
-![](/assets/images/cherrypy-url-routing/fig3.svg)
+![]({{ '/assets/images/cherrypy-url-routing/fig3.svg' | absolute_url }})
 
 aufgebaut und in der letzten Zeile am Einstiegspunkt `/photo-service` eingebunden. Der Service reagiert also entsprechend auf:
 
-![](/assets/images/cherrypy-url-routing/fig4.svg)
+![]({{ '/assets/images/cherrypy-url-routing/fig4.svg' | absolute_url }})
 
 Die Besonderheit des MD liegt nun darin, dass die Methoden `GET`, `POST`, `PUT` etc. als explizite Funktionen in den Klassen vorhanden sein müssen und automatisch verbunden werden, also:
 
