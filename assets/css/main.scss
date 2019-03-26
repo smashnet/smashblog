@@ -1,0 +1,23 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@import "bootstrap.min.css";
+@import "fontawesome.min.css";
+@import "markdown-body.css";
+@import "pygments-friendly.css";
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  padding-top: 56px;
+  margin-bottom: 70px; /* Margin bottom by footer height */
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
