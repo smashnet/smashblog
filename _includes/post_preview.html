@@ -2,7 +2,7 @@
   <div class="card-body markdown-body">
     <h2 class="card-title mb-0">{{ post.title }}</h2>
     <p class="text-muted">{{ post.subtitle }}</p>
-    <p class="card-text">{{ post.excerpt }}</p>
+    {{ post.excerpt }}
     <a href="{{ post.url | absolute_url }}" class="btn btn-outline-secondary">Read More &rarr;</a>
   </div>
   <div class="card-footer text-muted">
