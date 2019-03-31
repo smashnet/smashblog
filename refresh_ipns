@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Read IPFS hash from file
+HASH=$(<current_hash.txt)
+
+# Update IPNS
+echo "---------- Updating content hash on IPNS ----------"
+docker exec smashserv_ipfs_1 ipfs name publish $HASH
