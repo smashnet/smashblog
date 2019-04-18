@@ -3,6 +3,6 @@ layout: post
 author: nico
 title: Microservices mit CherryPy, Teil 2 - Service-Kommunikation
 subtitle: Entkoppelt kommunizieren.
-category: articles
+category: article
 published: false
 ---

@@ -3,7 +3,7 @@ layout: post
 author: nico
 title: Microservices mit CherryPy Teil 1 - URL Routing
 subtitle: Der richtige Dispatcher
-category: articles
+category: article
 published: true
 ---
 In diesem Blogpost möchte ich gerne meine Erfahrungen aus der Entwicklung eines Microservice basierten Kleinprojekts teilen. Als technische Basis der einzelnen Services kommt [CherryPy](https://cherrypy.org/) zum Einsatz.

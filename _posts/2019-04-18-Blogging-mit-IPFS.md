@@ -3,7 +3,7 @@ layout: post
 author: nico
 title: Blogging mit IPFS
 subtitle:
-category: articles
+category: article
 published: false
 ---
 * Pitch:
@@ -28,7 +28,7 @@ Nahezu alle üblichen Verdächtigen wie <a href="https://de.wordpress.org/">Word
 
 Abstrakt gesehen gibt es also eine Datenbasis, wie z.B. Blogpost Inhalte, die meist in einer Datenbank gespeichert ist, und ein dynamisches Frontend welches dem Nutzer erlaubt diese Daten auf verschiedenste Arten - eben dynamisch - anzuzeigen.
 
-Um nun zu verstehen, warum wir beim Blogging mit IPFS etwas umdenken müssen, müssen wir verstehen was Inhalte sind, und wie sie im DWeb in unserem Browser landen, verglichen mit dem normalen Web.
+Um nun zu sehen, warum wir beim Blogging mit IPFS etwas umdenken müssen, müssen wir verstehen was Inhalte sind, und wie sie im DWeb in unserem Browser landen, verglichen mit dem normalen Web.
 
 ## Inhalte
 
