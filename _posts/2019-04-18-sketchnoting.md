@@ -7,7 +7,7 @@ category: blog
 published: true
 ---
 
-Wie im [letzten Blogpost]({% post_url 2019-04-05-innoq-con %}) schon gezeigt, gab es von einigen Vorträgen der INNOQcon sehr schöne Sketchnotes. Ich war direkt begeistert davon wie man aus Inhalten kleine Kunstwerke erschaffen kann, und sich damit direkt die Inhalte besser merken kann.
+Wie im <a href="{{ '/blog/2019/04/05/innoq-con.html' | absolute_url }}">letzten Blogpost</a> schon gezeigt, gab es von einigen Vorträgen der INNOQcon sehr schöne Sketchnotes. Ich war direkt begeistert davon wie man aus Inhalten kleine Kunstwerke erschaffen kann, und sich damit direkt die Inhalte besser merken kann.
 
 Ein wesentlicher Grund, warum Sketchnotes so gut funktionieren, ist die [_Dual Coding Theory_](https://en.wikipedia.org/wiki/Dual-coding_theory). Diese besagt, dass Informationen aus einem visuellen Teil und einem verbalen Teil bestehen. Unser Kopf kann sich Dinge genau dann gut merken wenn es beide Teile für die Information gibt. Dabei ist der _visuelle_ wichtiger als der _verbale_.
 
