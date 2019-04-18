@@ -30,3 +30,5 @@ exclude:
   - deploy_smashblog
   - LICENSE
   - README.md
+  - current_hash.txt
+  - refresh_ipns
