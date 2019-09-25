@@ -15,6 +15,12 @@ html {
 body {
   padding-top: 56px;
   margin-bottom: 70px; /* Margin bottom by footer height */
+  font-family: sans-serif;
+}
+
+p {
+  font-family: serif;
+  font-size: 1.1em;
 }
 .footer {
   position: absolute;

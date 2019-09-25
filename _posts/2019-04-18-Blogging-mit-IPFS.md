@@ -1,35 +1,38 @@
 ---
 layout: post
 author: nico
-title: Blogging mit IPFS
-subtitle:
-category: article
-published: false
+title: LibreBlogging
+subtitle: Blogging with IPFS
+category: blog
+published: true
 ---
-* Pitch:
-* Was ist IPFS?
-* Warum IPFS?
-  * Dezentralisierung
-  * Nicht zensierbar
-  * Effizient in der Datenverteilung
-  * Deduplikation
-*
+LibreBlogging is an open source and hassle-free tool that enables you to set up a simple blog on [IPFS](https://ipfs.io) in no time.
 
-Wer seinen Blog über <a href="https://ipfs.io">IPFS</a> zur Verfügung stellen möchte, wird schnell merken, dass systembedingt die meisten der üblichen Blog-Softwares dafür nicht in Frage kommen. Warum das der Fall ist, und wie man trotzdem seinen Blog mit IPFS ins _Distributed Web_ (DWeb) bekommt, möchte ich in diesem Blogpost erläutern.
+Find current ideas and issue status here: [https://miro.com/app/board/o9J_kxu6Y1o=/](https://miro.com/app/board/o9J_kxu6Y1o=/)
+LibreBlogging on GitHub: [https://github.com/smashnet/LibreBlogging](https://github.com/smashnet/LibreBlogging)
 
-# Grundlegendes
+The benefits of publishing on IPFS are:
 
-Nahezu alle üblichen Verdächtigen wie <a href="https://de.wordpress.org/">Wordpress</a>, <a href="https://ghost.org/">Ghost</a>, <a href="http://www.s9y.org/">Serendipity</a>, etc. liefern den Blog als dynamische Seite aus. Das bedeutet, dass anhand gewisser Eingabeparameter das HTML der gerade aufgerufenen Blogseite dynamisch zusammengesetzt, und ausgeliefert wird. Das gibt dem Nutzer eine Reihe toller Vorteile:
+* Content is _not censorable_, as content is not hosted in a single place or by a company.
+* _Economical_, as you don't need to spend much money on hosting. You just need a small node to run IPFS on.
+* _Scalability_, as your content is cached and distributed also by other IPFS users that read your content.
 
-* Er kann nach bestimmten Blogposts suchen
-* Er kann über das Web-UI des Blog neue Posts schreiben
-* Er kann die Erscheinung des Blogs ändern, oder gar einzelnen Gästen die Möglichkeit geben eigene Präferenzen für die Ansicht des Blogs zu setzen
-* ...
+However, from a content creators perspective there are certain things that make publishing on IPFS rather difficult in comparison to regular blogging platforms:
 
-Abstrakt gesehen gibt es also eine Datenbasis, wie z.B. Blogpost Inhalte, die meist in einer Datenbank gespeichert ist, und ein dynamisches Frontend welches dem Nutzer erlaubt diese Daten auf verschiedenste Arten - eben dynamisch - anzuzeigen.
+* Your content is not addressed using handy domains, but through hashes that look like this: `QmTPixNxp6y3iWs2i5BTcv6EzNsX3MaEty1Yys2Nm4W8JD`
+* Every time you add or change content, you get a new or changed hash *sigh*
+* If you want an immutable address for your blog for sharing you can have one, the [IPNS](https://ipfs.io/ipns/docs.ipfs.io/guides/concepts/ipns/) hash of your node. However, that's still a hash...
+* Everytime your blog changes, your blog root will have a new hash that needs to be published to IPNS.
 
-Um nun zu sehen, warum wir beim Blogging mit IPFS etwas umdenken müssen, müssen wir verstehen was Inhalte sind, und wie sie im DWeb in unserem Browser landen, verglichen mit dem normalen Web.
+With LibreBlogging we try to come over these hassles and make it simple and easy to have a blog on IPFS while staying as decentralized as possible.
 
-## Inhalte
+## What is it about?
 
-Als _Inhalt_ oder _Content_ könnte man leicht etwas wie den Text eines Blogposts verstehen. Er ist die Essenz des Blogposts und das was ich als Autor vermitteln möchte. Bei IP__FS__ handelt es sich um ein _File System_ wo Seiten nach ihrem Inhalt adressiert werden. In diesem Kontext bedeutet TODO
+<div class="card">
+  <a href="{{ '/assets/images/idea-libreblogging/sketchnote_libreblogging.jpg' | absolute_url }}">
+  <img class="card-img-top" src="{{ '/assets/images/idea-libreblogging/sketchnote_libreblogging.jpg' | absolute_url }}" alt="Card image cap">
+  </a>
+  <div class="card-footer text-muted">
+    &copy; 2019 <a href="http://blog.smashnet.de/authors/nico.html">Nicolas Inden</a>
+  </div>
+</div>

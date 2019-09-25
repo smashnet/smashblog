@@ -3,7 +3,7 @@
     <h2 class="card-title mb-0">{{ post.title }}</h2>
     <p class="text-muted">{{ post.subtitle }}</p>
     {{ post.excerpt }}
-    <a href="{{ post.url | absolute_url }}" class="btn btn-outline-secondary">Read More &rarr;</a>
+    <a href="{{ post.url | absolute_url }}" class="btn btn-sm btn-outline-secondary">Read More &rarr;</a>
   </div>
   <div class="card-footer text-muted">
     {% assign author = site.authors | where: 'short_name', post.author | first %}
