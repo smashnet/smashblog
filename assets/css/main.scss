@@ -19,8 +19,15 @@ body {
 }
 
 p {
-  font-family: serif;
-  font-size: 1.1em;
+  font-family: sans-serif;
+}
+
+.card {
+  border: 0px;
+}
+
+.card-footer, .card-header {
+  background-color: white;
 }
 .footer {
   position: absolute;

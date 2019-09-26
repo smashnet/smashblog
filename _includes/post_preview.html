@@ -5,11 +5,4 @@
     {{ post.excerpt }}
     <a href="{{ post.url | absolute_url }}" class="btn btn-sm btn-outline-secondary">Read More &rarr;</a>
   </div>
-  <div class="card-footer text-muted">
-    {% assign author = site.authors | where: 'short_name', post.author | first %}
-    {% if author %}
-    by <a href="{{ author.url | absolute_url }}">{{ author.name }}</a>
-    {% endif %}
-     - Category: {{ post.category | capitalize }} - Posted on {{ post.date | date_to_string }}
-  </div>
 </div>
