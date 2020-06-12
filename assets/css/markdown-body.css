@@ -880,6 +880,7 @@
 .ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a {
  padding-right:38px
 }
+/*
 .markdown-body[lang^=ja] {
  font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,\\30D2\30E9\30AE\30CE\89D2\30B4 Pro W3,Osaka,Meiryo,\\30E1\30A4\30EA\30AA,MS Gothic,"\FF2D\FF33   \30B4\30B7\30C3\30AF",sans-serif
 }
@@ -897,7 +898,7 @@
 }
 .ui-toc-dropdown[lang=zh-cn] {
  font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,\\5FAE\8F6F\96C5\9ED1UI,sans-serif
-}
+}*/
 .ui-affix-toc {
  position:fixed;
  top:0;
@@ -1041,7 +1042,7 @@ body {
  -moz-osx-font-smoothing:auto!important;
  text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);
  -webkit-overflow-scrolling:touch;
- font-family:Source Sans Pro,Helvetica,Arial,sans-serif;
+ /*font-family:Source Sans Pro,Helvetica,Arial,sans-serif;*/
  letter-spacing:.025em
 }
 .focus,
