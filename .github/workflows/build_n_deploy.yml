@@ -28,7 +28,7 @@ jobs:
 
     - name: ssh deploy
       uses: easingthemes/ssh-deploy@v2.1.2
-      with:
+      env:
         # Private Key
         SSH_PRIVATE_KEY: ${{ secrets.STRATO_DEPLOY_KEY }}
         SOURCE: "_site/"
