@@ -31,13 +31,7 @@ jobs:
       with:
         # Private Key
         SSH_PRIVATE_KEY: ${{ secrets.STRATO_DEPLOY_KEY }}
-        # Remote host
-        REMOTE_HOST: ssh.strato.de
-        # Remote user
-        REMOTE_USER: smashnet.de
-        # Remote port
-        REMOTE_PORT: # optional, default is 22
-        # Source directory
-        SOURCE: $GITHUB_WORKSPACE/_Site/
-        # Target directory
-        TARGET: ~/nicolas.inden.one/
+        SOURCE: "_site/"
+        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+        REMOTE_USER: ${{ secrets.REMOTE_USER }}
+        TARGET: ${{ secrets.REMOTE_TARGET }}
