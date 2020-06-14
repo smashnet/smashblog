@@ -34,7 +34,7 @@ community:
 
 experience:
   - time: 11/2018 - today
-    title: IT Consultant
+    title: Senior Consultant
     company: innoQ Deutschland GmbH
     link: https://innoq.com
     content: I joined INNOQ in order to extend my horizon and get a deeper dive into software development and architecture. However, my main focus remains at the product owner role.<br/>Find my INNOQ articles and blog posts <a href="https://www.innoq.com/de/staff/nicolas-inden/">here</a>.
