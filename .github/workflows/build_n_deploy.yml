@@ -22,6 +22,9 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - name: Checkout
       uses: actions/checkout@v2
+
+    - name: Insert date of last update
+      run: sh insert_date.sh
     
     - name: Build Jekyll
       uses: jerryjvl/jekyll-build-action@v1
