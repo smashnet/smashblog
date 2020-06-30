@@ -4,7 +4,7 @@ subtitle: Mein aktueller Workflow
 layout: post
 author: nico
 category: blog
-published: false
+published: true
 ---
 Eigentlich ist es heute für jeden Website-Admin oder -Author selbstverständlich, dass sich neue Blogposts simpel, von überall und von jedem Endgerät aus erstellen und publizieren lassen. Mit dieser Website war das lange Zeit anders. Aus purer Entwicklerromantik habe ich mich entschieden einen Static Site Generator (hier Jekyll) zu nutzen. Ich habe also kein schickes Web-UI wo ich meine Posts schreibe, sondern schreibe diese in Markdown-Dateien, aus denen dann zusammen mit einem Template statisches HTML gebaut und deployt wird. Wie das alles rein vom iPad aus funktionieren kann, darum geht's in diesem Blogpost.
 
