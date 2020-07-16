@@ -1,5 +1,9 @@
 - name: Blog
   link: /
+- name: Toots!
+  link: /toots.html
+- name: Articles
+  link: /articles.html
 - name: About
   link: /authors/nico.html
 - name: Impressum

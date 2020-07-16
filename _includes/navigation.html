@@ -10,6 +10,9 @@
         <li class="nav-item {% if page.url == '/' | absolute_url %}active{% endif %}">
           <a class="nav-link" href="{{ '/' | absolute_url }}">Home</a>
         </li>
+        <li class="nav-item {% if page.url == '/toots.html' | absolute_url %}active{% endif %}">
+          <a class="nav-link" href="{{ '/toots.html' | absolute_url }}">Toots!</a>
+        </li>
         <li class="nav-item {% if page.url == '/articles.html' | absolute_url %}active{% endif %}">
           <a class="nav-link" href="{{ '/articles.html' | absolute_url }}">Articles</a>
         </li>
