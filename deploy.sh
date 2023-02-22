@@ -2,4 +2,4 @@
 
 ./build.sh
 
-rsync -r _site/* eck:Docker/inden.one/content/
+rsync -r _site/* eck:Docker/inden.one/content/ --delete

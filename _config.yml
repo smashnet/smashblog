@@ -35,6 +35,7 @@ exclude:
   - insert_date.sh
   - deploy.sh
   - serve.sh
+  - Dockerfile
   - deploy_smashblog
   - LICENSE
   - README.md

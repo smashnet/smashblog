@@ -1,6 +1,4 @@
 ---
-# this ensures Jekyll reads the file to be transformed into CSS later
-# only Main files contain this front matter, not partials.
 ---
 
 @import "bootstrap.min.css";
@@ -26,16 +24,20 @@ body {
   font-style: normal;
 }
 
+.text-bg-secondary a {
+  color: white;
+}
+
 .card {
-  border: 0px
+  border: 0px;
 }
 
 .card-footer, .card-header {
-  background-color: white
+  background-color: white;
 }
 
 .footer {
   position: absolute;
   bottom: 0;
-  width: 100%
+  width: 100%;
 }
