@@ -32,6 +32,8 @@ paginate_path: "/page:num/"
 
 exclude:
   - build.sh
+  - insert_date.sh
+  - deploy.sh
   - serve.sh
   - deploy_smashblog
   - LICENSE

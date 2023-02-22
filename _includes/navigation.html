@@ -1,20 +1,14 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-  <div class="container">
+  <div class="container-fluid">
     <a class="navbar-brand" href="{{ '/' | absolute_url }}">Nicos Blog</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item {% if page.url == '/' | absolute_url %}active{% endif %}">
-          <a class="nav-link" href="{{ '/' | absolute_url }}">Home</a>
-        </li>
-        <li class="nav-item {% if page.url == '/toots.html' | absolute_url %}active{% endif %}">
-          <a class="nav-link" href="{{ '/toots.html' | absolute_url }}">Toots!</a>
-        </li>
-        <li class="nav-item {% if page.url == '/articles.html' | absolute_url %}active{% endif %}">
-          <a class="nav-link" href="{{ '/articles.html' | absolute_url }}">Articles</a>
+          <a class="nav-link" href="{{ '/' | absolute_url }}">Blog</a>
         </li>
         <li class="nav-item {% if page.url == '/authors/nico.html' | absolute_url %}active{% endif %}">
           <a class="nav-link" href="{{ '/authors/nico.html' | absolute_url }}">About</a>

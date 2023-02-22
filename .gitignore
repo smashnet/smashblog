@@ -1,5 +1,6 @@
-*.DS_Store
-current_hash.txt
-_site/
-.jekyll-cache/
-deploy.sh
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+.DS_Store
+vendor

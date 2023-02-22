@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker run --rm --volume="$PWD:/srv/jekyll" -it jekyll/jekyll jekyll build --baseurl "."
+docker run --rm -v $(pwd):/site myjekyll build --baseurl "."

@@ -9,7 +9,7 @@ published: false
 
 Wer Festplattenverschlüsselung auf Partitionsebene für sein Linux System haben möchte, nutzt dafür aktuell fast unvermeidlich [dm-crypt](https://de.wikipedia.org/wiki/Dm-crypt) mit [LUKS](https://de.wikipedia.org/wiki/Dm-crypt#Erweiterung_mit_LUKS). So auch in meinem Fall, nach meinem Wechsel weg vom Mac hin zu [Manjaro Linux](https://manjaro.org/). In diesem Blogpost geht es um eine kleine Optimierung - und die dabei erlebten Fallstricke - um den Bootvorgang in diesem Szenario zu beschleunigen.
 
-Was mich nun dazu brachte mir das Thema _LUKS_ genauer anzuschauen war, dass mein System sich bei jedem Bootvorgang nach Eingabe der Passphrase gefühlte 5-10 Gedenksekunden erlaubt hat, bevor es mit dem Start des OS weiterging. Um zu verstehen wie diese Verzögerung zustande kommt, müssen wir uns zunächst (stark vereinfacht) anschauen was _dm-crypt_ und _LUKS_ genau tun:
+Was mich nun dazu brachte mir das Thema _LUKS_ genauer anzuschauen war, dass mein System sich bei jedem Bootvorgang nach Eingabe der Passphrase gefühlte 5-10 Gedenksekunden erlaubt hat, bevor es mit dem Start des OS weiterging. Um zu verstehen wie diese Verzögerung zustande kommt, müssen wir uns zunächst (stark vereinfacht) anschauen was _dm-crypt_ und _LUKS_ genau tun.
 
 **Dm-Crypt** ist der eigentliche Verschlüsselungslayer. Das Tool wird mit einem _Schlüssel_ gefüttert, und ver- und entschlüsselt damit alle Daten die auf die Partition geschrieben und gelesen werden. Dafür nutzt es ein zu Beginn festgelegtes, symmetrisches Chiffrierungsverfahren wie z.B. [AES](https://de.wikipedia.org/wiki/Advanced_Encryption_Standard). Dabei gibt es zwei in der Praxis unschöne Probleme:
 
@@ -17,7 +17,7 @@ Was mich nun dazu brachte mir das Thema _LUKS_ genauer anzuschauen war, dass mei
 
 2. Wenn es sich um ein System mit mehreren Benutzern handelt, dann müssten alle Benutzer zusätzlich zu ihren individuellen Benutzer-Passwörtern auch die Passphrase kennen, um den Rechner zu starten.
 
-Um (unter Anderem) diese beiden Punkte zu adressieren kommt nun **LUKS** ins Spiel.
+Um (unter Anderem) diese beiden Punkte zu adressieren kommt nun **LUKS** ins Spiel. LUKS ist im Prinzip ein Managementlayer über dm-crypt. Es hält und liefert die Informationen zum verwendeten _Schlüsselableitungsverfahren_, und zum gewählten Verschlüsselungsalgorithmus. Außerdem bietet es die Möglichkeit die Festplatte mit mehreren verschiedenen Passphrasen oder Keyfiles zu entschlüsseln.
 
 -----
 
