@@ -9,7 +9,7 @@ published: true
 
 I've been using [Mastodon](https://joinmastodon.org) for quite a while now. And I really like the idea behind it, especially from a _distributed web_ perspective. Taking _decentralization_ a step further, my next step was to set up an own instance of Mastodon.
 
-In this blog post I'd like to take you on the journey of setting up an own instance of Mastodon using [Docker(-Compose)](https://www.docker.com) and [Traefik v2.1](https://traefik.io).
+In this blog post I'd like to take you on the journey of setting up an own instance of Mastodon using [Docker(-Compose)](https://www.docker.com) and [Traefik v2.9](https://traefik.io).
 
 Why do I think we need yet another tutorial for this? Well, at first there seem to be not so many tutorials for Traefik v2 around yet. Searching the internet mostly yields Traefik v1 related guides and tutorials. Secondly, there are two things I just couldn't achieve using the once existing Mastodon docker guide (by the time of writing this guide, Mastodon removed its docker guide completely):
 
@@ -24,7 +24,7 @@ So, this guide goes another way :)
 
 This guide shows how you can setup your own instance of Mastodon using a single docker-compose file.
 
-In the former Mastodon docker guide and the `docker-compose.yml` from Mastodons [repository](https://github.com/tootsuite/mastodon) they place the nginx reverse-proxy outside of docker hence requiring the administrator to manually setup and configure a separate nginx on her box.
+In the former Mastodon docker guide and the `docker-compose.yml` from Mastodons [repository](https://github.com/mastodon/mastodon) they place the nginx reverse-proxy outside of docker hence requiring the administrator to manually setup and configure a separate nginx on her box.
 
 I really like keeping things as simple as possible so I tried reducing the complexity by integrating Traefik as reverse-proxy and its configuration into the docker-compose file ending up with a single file that could fire up the complete Mastodon instance :)
 
@@ -86,7 +86,7 @@ Let's have a look at the `traefik` part of the `docker-compose.yml`:
 
 ```
   traefik:
-    image: traefik:2.1
+    image: traefik:2.9
     container_name: "traefik"
     restart: always
     command:

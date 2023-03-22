@@ -6,9 +6,9 @@ profile_image: nico.jpg
 about: My name is Nico, I live in germany and love tech stuff, music and photography. Luckily, I can leverage my affinity for hardware and software in my job as IT consultant. On the arty side of live I played electric guitar in a band many years ago. Hopefully, there will be another chance to do so in future :)
 
 mastodon: https://meinungsschubla.de/@Nico
-twitter: https://twitter.com/smashnet
 github: https://github.com/smashnet
 xing: https://www.xing.com/profile/Nicolas_Inden
+mail: bloginput@inden.one
 
 gpg_key_id: B2F8AA17
 gpg_key_fingerprint: A757 5741 FD1E 63E8 357D  48E2 3C68 AE70 B2F8 AA17

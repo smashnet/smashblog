@@ -14,15 +14,9 @@ layout: default
         {{ page.about }}
         <hr/>
         <a class="btn btn-light" href="{{ page.mastodon }}"><i class="fab fa-2x fa-mastodon"></i></a>
-        <a class="btn btn-light" href="{{ page.twitter }}"><i class="fab fa-2x fa-twitter"></i></a>
         <a class="btn btn-light" href="{{ page.github }}"><i class="fab fa-2x fa-github"></i></a>
         <a class="btn btn-light" href="{{ page.xing }}"><i class="fab fa-2x fa-xing"></i></a>
-        <a class="btn btn-light" data-toggle="collapse" href="#gpgKey" role="button" aria-expanded="false" aria-controls="gpgKey"><i class="fas fa-2x fa-lock"></i></a>
-      </div>
-      <div class="collapse text-muted" id="gpgKey">
-        GPG Public Key
-        <a class="btn btn-light" href="{{ page.gpg_key_url | absolute_url }}"><i class="fas fa-lg fa-file-download"></i></a><br/>
-        {{ page.gpg_key_fingerprint }}
+        <a class="btn btn-light" href="mailto:{{ page.mail }}"><i class="fas fa-2x fa-envelope"></i></a>
       </div>
     </div>
   </div>
