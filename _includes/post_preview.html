@@ -5,4 +5,7 @@
     {{ post.excerpt }}
     <a href="{{ post.url | absolute_url }}" class="btn btn-sm btn-outline-secondary">Read More &rarr;</a>
   </div>
+  <div class="card-footer">
+    <small class="fw-light">{{ post.date | date_to_string }}</small>
+  </div>
 </div>

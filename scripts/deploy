@@ -1,0 +1,7 @@
+#!/bin/bash -e
+
+./scripts/build
+
+rsync -r _site/* eck:Docker/inden.one/content/ --delete
+
+rsync -r _site/* eck:Docker/IPFS/staging/inden.one/ --delete
