@@ -4,7 +4,7 @@ layout: default
 <div class="row">
   <div class="col-sm-4 mb-4"><!--left col-->
     <div class="text-center">
-      <img src="{{ 'assets/images/' | append: page.profile_image | absolute_url }}" class="avatar img-thumbnail" alt="avatar">
+      <img src="{{ 'assets/images/' | append: page.profile_image | relative_url }}" class="avatar img-thumbnail" alt="avatar">
     </div>
   </div>
   <div class="col-sm-8 mb-4"><!--right col-->
@@ -55,7 +55,7 @@ layout: default
       <td>{{ com.title }}</td>
       <td>{{ com.position }}</td>
       <td>{{ com.content }}</td>
-      <td><a href="{{ com.link | absolute_url }}"><i class="fas fa-link"></i></a></td>
+      <td><a href="{{ com.link | relative_url }}"><i class="fas fa-link"></i></a></td>
     </tr>
     {% endfor %}
   </tbody>
@@ -81,7 +81,7 @@ layout: default
       <td>{{ exp.title }}</td>
       <td>{{ exp.company }}</td>
       <td>{{ exp.content }}</td>
-      <td><a href="{{ exp.link | absolute_url }}"><i class="fas fa-link"></i></a></td>
+      <td><a href="{{ exp.link | relative_url }}"><i class="fas fa-link"></i></a></td>
     </tr>
     {% endfor %}
   </tbody>
@@ -105,7 +105,7 @@ layout: default
       <td>{{ pub.type }}</td>
       <td>{{ pub.title }}</td>
       <td>{{ pub.date }}</td>
-      <td><a href="{{ pub.link | absolute_url }}"><i class="fas fa-link"></i></a></td>
+      <td><a href="{{ pub.link | relative_url }}"><i class="fas fa-link"></i></a></td>
     </tr>
     {% endfor %}
   </tbody>

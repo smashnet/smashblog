@@ -7,7 +7,7 @@ category: blog
 published: true
 ---
 
-Wie im <a href="{{ '/blog/2019/04/05/innoq-con.html' | absolute_url }}">letzten Blogpost</a> schon gezeigt, gab es von einigen Vorträgen der INNOQcon sehr schöne Sketchnotes. Ich war direkt begeistert davon wie man aus Inhalten kleine Kunstwerke erschaffen kann, und sich damit direkt die Inhalte besser merken kann.
+Wie im <a href="{{ '/blog/2019/04/05/innoq-con.html' | relative_url }}">letzten Blogpost</a> schon gezeigt, gab es von einigen Vorträgen der INNOQcon sehr schöne Sketchnotes. Ich war direkt begeistert davon wie man aus Inhalten kleine Kunstwerke erschaffen kann, und sich damit direkt die Inhalte besser merken kann.
 
 Ein wesentlicher Grund, warum Sketchnotes so gut funktionieren, ist die [_Dual Coding Theory_](https://en.wikipedia.org/wiki/Dual-coding_theory). Diese besagt, dass Informationen aus einem visuellen Teil und einem verbalen Teil bestehen. Unser Kopf kann sich Dinge genau dann gut merken wenn es beide Teile für die Information gibt. Dabei ist der _visuelle_ wichtiger als der _verbale_.
 
@@ -16,8 +16,8 @@ Umgangssprachlich kennt man das schon aus dem Spruch _"Ein Bild sagt mehr als ta
 Hier mein Sketchnote dazu:
 
 <div class="card">
-  <a href="{{ '/assets/images/sketchnoting/sketchnote_dual_coding.jpg' | absolute_url }}">
-  <img class="card-img-top" src="{{ '/assets/images/sketchnoting/sketchnote_dual_coding.jpg' | absolute_url }}" alt="Card image cap">
+  <a href="{{ '/assets/images/sketchnoting/sketchnote_dual_coding.jpg' | relative_url }}">
+  <img class="card-img-top" src="{{ '/assets/images/sketchnoting/sketchnote_dual_coding.jpg' | relative_url }}" alt="Card image cap">
   </a>
   <div class="card-footer text-muted">
     &copy; 2019 <a href="http://blog.smashnet.de/authors/nico.html">Nicolas Inden</a>

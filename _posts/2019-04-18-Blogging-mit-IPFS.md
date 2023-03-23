@@ -29,8 +29,8 @@ With LibreBlogging we try to come over these hassles and make it simple and easy
 ## What is it about?
 
 <div class="card">
-  <a href="{{ '/assets/images/idea-libreblogging/sketchnote_libreblogging.jpg' | absolute_url }}">
-  <img class="card-img-top" src="{{ '/assets/images/idea-libreblogging/sketchnote_libreblogging.jpg' | absolute_url }}" alt="Card image cap">
+  <a href="{{ '/assets/images/idea-libreblogging/sketchnote_libreblogging.jpg' | relative_url }}">
+  <img class="card-img-top" src="{{ '/assets/images/idea-libreblogging/sketchnote_libreblogging.jpg' | relative_url }}" alt="Card image cap">
   </a>
   <div class="card-footer text-muted">
     &copy; 2019 <a href="http://blog.smashnet.de/authors/nico.html">Nicolas Inden</a>
