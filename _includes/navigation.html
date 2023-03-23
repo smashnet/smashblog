@@ -13,8 +13,11 @@
         <li class="nav-item {% if page.url == '/authors/nico.html' | absolute_url %}active{% endif %}">
           <a class="nav-link" href="{{ '/authors/nico.html' | absolute_url }}">About</a>
         </li>
-        <li class="nav-item {% if page.url == '/authors/nico.html' | absolute_url %}active{% endif %}">
+        <li class="nav-item">
           <a class="nav-link" href="mailto:bloginput@inden.one"><i class="fa fa-envelope"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ '/atom.xml' | absolute_url }}"><i class="fa fa-rss"></i></a>
         </li>
       </ul>
     </div>
