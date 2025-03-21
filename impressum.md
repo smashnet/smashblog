@@ -13,7 +13,7 @@ title: Impressum
 
 **Kontakt:**
 
-E-Mail: <a href="#" class="fa fa-envelope"> <span>nicolas /at/ inden /dot/ one</span></a>  
+E-Mail: <span class="fa fa-envelope">  nicolas /at/ inden /dot/ one</span>  
 Zur verschlüsselten Kontaktaufnahme können Sie <a href="assets/GPG_Nicolas_Inden_B2F8AA17.asc">diesen</a> PGP Schlüssel verwenden.
 
 **Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:**
