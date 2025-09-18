@@ -43,10 +43,16 @@ Jetzt installieren wir Docker und die notwendigen Tools:
 
 1. Installiert Docker, docker-buildx, docker-credential-helper und Colima mit Homebrew:
    ```bash
-   brew install docker docker-buildx docker-credential-helper colima
+   brew install docker docker-compose docker-buildx docker-credential-helper colima
    ```
 
-2. Passt das Colima Template an Apple Silicon und eure Bedürfnisse an:
+2. Erstellt einen symbolischen Link für docker-buildx und docker-compose in das Docker CLI-Plugins-Verzeichnis:
+   ```bash
+   mkdir -p ~/.docker/cli-plugins/
+   ln -sfn $(which docker-buildx) ~/.docker/cli-plugins/docker-buildx
+   ln -sfn $(which docker-compose) ~/.docker/cli-plugins/docker-compose
+    ```
+3. Passt das Colima Template an Apple Silicon und eure Bedürfnisse an:
    ```bash
    colima template
    ```
@@ -58,7 +64,7 @@ Jetzt installieren wir Docker und die notwendigen Tools:
    rosetta: true (Sorgt dafür, dass x86_64/amd64 Images mit Rosetta gestartet werden)
    ```
 
-3. Damit Colima jetzt automatisch gestartet wird, aktiviert ihr den Service:
+4. Damit Colima jetzt automatisch gestartet wird, aktiviert ihr den Service:
    ```bash
    brew services start colima
    ```
