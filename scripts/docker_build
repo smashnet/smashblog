@@ -1,5 +1,3 @@
 #!/bin/bash
 
-docker build -t myjekyll .
-
-# Remeber installing the gems from the gemfile and keep versions fresh
+docker buildx build -t myjekyll .
