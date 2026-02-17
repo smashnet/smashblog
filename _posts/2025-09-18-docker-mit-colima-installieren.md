@@ -7,7 +7,7 @@ category: blog
 published: true
 ---
 
-Docker Desktop bringt mittlerweile deutlich mehr Features mit als ein pures `docker`. Wer keine Verwendung für Features wie die `Docker Build Cloud`, `Testcontainer Cloud` oder `Docker Model Runner` hat, kann beruhigt auf eine Docker Desktop Lizenz verzichten und kommt mit der Docker Engine und Docker CLI aus.
+Docker Desktop bringt mittlerweile deutlich mehr Features mit als ein pures `docker` CLI. Wer keine Verwendung für Features wie die `Docker Build Cloud`, `Testcontainer Cloud` oder `Docker Model Runner` hat, kann beruhigt auf eine Docker Desktop Lizenz verzichten und kommt mit der Docker Engine und Docker CLI aus.
 
 Da Docker Desktop auf dem Mac auch die Virtualisierung steuert und stellt, braucht es auf dem Mac eine Alternative, und die heißt [Colima](https://github.com/abiosoft/colima). 
 
