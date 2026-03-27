@@ -1,3 +1,7 @@
+> **Archived**
+>
+> This is the old version of my blog that is no longer maintained.
+
 # smashblog
 ## Description
 
